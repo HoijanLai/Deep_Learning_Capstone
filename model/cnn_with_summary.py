@@ -208,7 +208,7 @@ with graph.as_default():
                 tf.scalar_summary('Cross_entropy', loss)    
         with tf.name_scope('Learning_Rate'):    
             global_step = tf.Variable(0, name = 'global_step')
-            learning_rate = tf.train.exponential_decay(1e-3, global_step, 500, .92, staircase=True, name = 'learning_rate')
+            learning_rate = tf.train.exponential_decay(1e-3, global_step, 500, .98, staircase=True, name = 'learning_rate')
             tf.scalar_summary('lerning_Rate', learning_rate)        
         optimizer = tf.train.AdamOptimizer(learning_rate).minimize(loss, global_step = global_step)
     
@@ -236,7 +236,7 @@ with graph.as_default():
    
     
     
-train_writer = tf.train.SummaryWriter('board_summary/val', graph)    
+train_writer = tf.train.SummaryWriter('board_summary/record', graph)    
 #val_writer = tf.train.SummaryWriter('board_summary/val')
 
 num_steps = 30001
