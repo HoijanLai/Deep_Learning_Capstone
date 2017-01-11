@@ -1,4 +1,4 @@
-# Deep Learning Capstone
+# Deepgits
 A Jupyter Notebook Series that Implements Digit Recognition on the SVHN Dataset 
 
 ## Getting The Data
