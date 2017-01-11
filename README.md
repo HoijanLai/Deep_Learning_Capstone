@@ -10,5 +10,4 @@ Go to http://ufldl.stanford.edu/housenumbers/ and download the format 2 data in 
 3. To view the experiments, checkout /model/experiment.ipynb
 4. Running model/cnn_with_summary.py will implement my final model and record summary for tensorboard usage. Before running this script, you should have the pickle data
 
-## Details
-The model is built using CPU version tensorflow 
+
